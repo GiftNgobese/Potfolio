@@ -1,0 +1,109 @@
+
+.about-section{
+    margin-bottom: 100px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: cursive; */
+    font-family: 'Lucida Calligraphy', 'URW Chancery L', cursive;
+
+}
+
+
+body {
+    font-family: Stencil Std, fantasy;
+    /* font-family: Arial, sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* background-color: orangered; */
+    justify-content: center;
+    text-align: center;
+}
+
+* {
+    /* background-color: orangered; */
+    /* background-color:  #000000; */
+    /* background-color: #131B23; */
+    background-color: #7C3626;
+    color: #0E1428;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.second-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.third-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.fourth-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.fifth-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sixth-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.seventh-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+progress {
+    width: 60%;
+    height: 5px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ----------- ---------------------------------        ---------------------------------------------------  */
+
+.skill progress {
+    /* appearance: none; Remove default styling in some browsers */
+    background-color: #0E1428; /* Set the background color */
+}
+
+/* Style the progress bar thumb (fill) */
+.skill progress::-webkit-progress-value {
+    background-color: #0E1428; /* Set the background color for WebKit browsers */
+}
+
+.skill progress::-moz-progress-bar {
+    background-color: #0E1428; /* Set the background color for Firefox */
+}
+
+/* Style the progress bar track (unfilled portion) */
+.skill progress::-webkit-progress-bar {
+    background-color: #f0f0f0; /* Set the background color for WebKit browsers */
+}
+
+.skill progress::-moz-progress-bar {
+    background-color: #f0f0f0; /* Set the background color for Firefox */
+}
+
+.percentage {
+    color: #0E1428;
+    font-weight: bold;
+}
