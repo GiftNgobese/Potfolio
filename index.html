@@ -9,55 +9,148 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
         <link rel="shortcut icon" href="./images/System-Logo.jpg" type="image/x-icon" alt="1728">
-        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./styles/global.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./javascript/script.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
-  
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+            }
+    
+            nav {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+            }
+    
+            nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            nav a {
+                text-decoration: none;
+                color: #fff;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+    
+            nav a:hover {
+                background-color: #555;
+            }
+    
+            @media (max-width: 768px) {
+                nav ul {
+                    flex-direction: column;
+                }
+    
+                nav a {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        </style>
         <!-- Comment-->
     </head>
     
 
 <body class="main-body"> 
-    <nav class="navbar navbar-expand-lg navbar-light p-5">
+
+
+    <!-- <nav class="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="images" src="./images/aizen.jpeg" alt="LOGO Image" style="color: black; width:80px; height:80px;">
+                <img src="./images/aizen.jpeg" alt="LOGO Image">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon">&#9776;</span>
             </button>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button">More</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#education">Education</a>
+                        <a class="dropdown-item" href="#skills">Skills</a>
+                        <a class="dropdown-item" href="#services">Services</a>
+                        <a class="dropdown-item" href="#projects">Past Projects</a>
+                        <a class="dropdown-item" href="#competition">Competition</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home" style="color: black;">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about" style="color: black;">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact" style="color: black;">Contact</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">More</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#education">Education</a></li>
-                            <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                            <li><a class="dropdown-item" href="#services">Services</a></li>
-                            <li><a class="dropdown-item" href="#projects">Past Projects</a></li>
-                            <li><a class="dropdown-item" href="#competition">Competition</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <!-- <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                Logo
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" onclick="toggleDropdown()">More</a>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="#" class="dropdown-item">Education</a>
+                        <a href="#" class="dropdown-item">Skills</a>
+                        <a href="#" class="dropdown-item">Services</a>
+                        <a href="#" class="dropdown-item">Past Projects</a>
+                        <a href="#" class="dropdown-item">Competition</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="navbar-toggle">
+                <i class="fas fa-bars" onclick="toggleMenu()"></i>
             </div>
         </div>
+    </nav> -->
+
+    <nav class="myNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" onclick="toggleDropdown()">More</a>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="#" class="dropdown-item">Education</a>
+                    <a href="#" class="dropdown-item">Skills</a>
+                    <a href="#" class="dropdown-item">Services</a>
+                    <a href="#" class="dropdown-item">Past Projects</a>
+                    <a href="#" class="dropdown-item">Competition</a>
+                </div>
+            </li>
+        </ul>
     </nav>
+
+    
 
     <div class="position-relative text-center justify-content-center">
         <div class="row mb-5" id="home">
@@ -276,6 +369,18 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarToggler = document.getElementById("navbar-toggler");
+            const navbarLinks = document.getElementById("navbar-links");
+
+            navbarToggler.addEventListener("click", function () {
+                navbarLinks.classList.toggle("show");
             });
         });
     </script>
